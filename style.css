@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+img{
+    border-radius: 10%;
+    width: 144px;
+    height: 87px;
+}
+
+h1 ,h2 {
+    font-family: 'Righteous', cursive;
+}
+h2{
+    color:  #333333;
+    ;
+}
+body{
+    background-color: #E5E5E5;
+}
+.top_bar{
+    width: 100%;
+    height: 92px;
+
+    background-color: #CF2B2B;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 40px;
+
+    /*position: fixed;
+    top: 0%;*/
+}
+
+.top_bar  h1 {
+    font-size: 44px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Righteous';
+
+    margin-left: 21px;
+}
+
+.top_bar h3{
+
+    margin-left: 21px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.conteudo{
+    background-color: #E5E5E5;
+}
+
+.pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    
+}
+.pedido h2{
+    margin-left: 21px;
+    margin-bottom: 5px;
+
+    font-size: 26px;
+    font-weight: 400;
+}
+.itens_conteiner {
+    display: flex;
+    
+
+    margin-left: 11px;
+
+    overflow-x: scroll;
+
+    width: 100%;
+    height: 100%;
+}
+.item{
+    background-color: #FFFFFF;
+    
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+    height: auto;
+    width: 172px;
+
+    margin: 10px;
+}
+
+.item p{
+    color: #A6A6A6;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    
+    
+}
+.margin_item{
+    margin: 10px;
+}
+.bottom_bar{
+    width: 100%;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*position: fixed;
+    bottom: 0%;*/
+}
+
+.bottom_bar  button{
+    background-color: #CBCBCB;
+
+    border: none;
+    border-radius: 50px;
+
+    color: white;
+
+    
+
+    text-align: center;
+    text-decoration: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+
+    font-size: 20px;
+    font-weight: 400;
+
+    height: 53px;
+    width: 364px;
+}
+
+.bottom_bar span {
+    text-align: center;
+    text-decoration: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    
+}
