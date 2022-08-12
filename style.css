@@ -131,7 +131,7 @@ body{
 }
 
 .bottom_bar  button{
-    background-color: #CBCBCB;
+    
 
     border: none;
     border-radius: 50px;
@@ -180,6 +180,12 @@ body{
     border-width: 5px;
 
     border-style: solid;
+}
+.btn-verde{
+    background-color: #32B72F;
+}
+.btn-cinza{
+    background-color: #CBCBCB;
 }
 
 @media (max-width: 414px) {

@@ -1,3 +1,5 @@
+let count = 0;
+
 function teste () {
 
     const nome = prompt("Escreva o seu nome:");
@@ -15,15 +17,34 @@ function select_pedido(pedido , secao){
     if (x !== null) {
         x.classList.toggle("tag");
         y.classList.toggle("hide");
+        count -- ;
     } 
         anota.classList.toggle("tag");
         marca.classList.toggle("hide");
+        count ++;
     
-
+        if (count === 3) {
+            ativaButao();
+            coloreButao();
+        }
     
     
    
-    //console.log(marca);
+    //console.log(count);
     
     
+}
+function ativaButao(){
+    const butao = document.querySelector("button");
+    butao.innerHTML = "Fechar pedido";
+    butao.outerHTML =  `<button class="btn-cinza" onclick="teste()">Fechar pedido</button>`;
+    console.log(butao.outerHTML);
+    
+    
+}
+function coloreButao(){
+    const butao = document.querySelector("button");
+    butao.classList.remove("btn-cinza");
+    butao.classList.add("btn-verde");
+   
 }
