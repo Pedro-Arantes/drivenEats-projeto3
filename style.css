@@ -6,9 +6,9 @@
 
 }
 img{
-    border-radius: 10%;
-    width: 144px;
-    height: 87px;
+    border-radius: 5%;
+    
+    object-fit: cover;
 }
 
 h1 ,h2 {
@@ -83,6 +83,7 @@ body{
     margin-left: 11px;
 
     overflow-x: scroll;
+    
 
     width: 100%;
     height: 100%;
@@ -90,7 +91,7 @@ body{
 .item{
     background-color: #FFFFFF;
     
-    border-radius: 10%;
+    border-radius: 5%;
 
     display: flex;
     flex-direction: column;
@@ -101,6 +102,8 @@ body{
     width: 172px;
 
     margin: 10px;
+
+    position: relative;
 }
 
 .item p{
@@ -157,4 +160,31 @@ body{
     overflow-wrap: break-word;
 
     
+}
+.hide {
+    display: none;
+}
+.check{
+    position: absolute;
+    left: 80%;
+    top: 90%;
+
+    color: #32B72F;
+
+    font-size: 20px;
+    
+}
+.tag{
+    border-color: #32B72F;
+    
+    border-width: 5px;
+
+    border-style: solid;
+}
+
+@media (max-width: 414px) {
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }

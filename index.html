@@ -18,26 +18,29 @@
         <div class="pedido">
             <h2>Primeiro, seu prato</h2>
             <div class="itens_conteiner">
-                <div class="item">
+                <div class="item yaki" onclick="select_pedido('.yaki')">
                     <img  class="margin_item"src="img/yakissoba_misto.jpeg" alt="">
                     <h4 class="margin_item">Yakissoba misto</h4>
                     <p class="margin_item">Com carne de frango e bovina</p>
                     <p class="margin_item">Um ótimo pedido</p>
                     <strong class="margin_item">R$ 18,00</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item carne" onclick="select_pedido('.carne')">
                     <img  class="margin_item"src="img/carne_assada.jpeg" alt="">
                     <h4 class="margin_item" >Carne Assada</h4>
                     <p class="margin_item">Carne assada no forno a lenha</p>
                     <p class="margin_item">Acompanhada de batatas calabresas</p>
                     <strong class="margin_item">R$ 32,50</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item x_tudo" onclick="select_pedido('.x_tudo')">
                     <img class="margin_item" src="img/x_tudo.jpeg" alt="">
                     <h4 class="margin_item">X-tudo</h4>
                     <p class="margin_item">Pra quem ta com vontade</p>
                     <p class="margin_item">tem tudo o que imaginar de bom</p>
                     <strong class="margin_item">R$ 20,00</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
             </div>
             
             </div>
@@ -45,26 +48,29 @@
         <div class="pedido">
             <h2>Agora, sua bebida</h2>
             <div class="itens_conteiner">
-                <div class="item">
+                <div class="item coca" onclick="select_pedido('.coca')">
                     <img  class="margin_item"src="img/coquinha.jpeg" alt="">
                     <h4 class="margin_item">Coca Cola</h4>
                     <p class="margin_item">Lata de 350ml</p>
                     
                     <strong class="margin_item">R$ 2,79</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item mate" onclick="select_pedido('.mate')">
                     <img class="margin_item" src="img/mate.jpeg" alt="">
                     <h4 class="margin_item">Mate Leão</h4>
                     <p class="margin_item">Copo de 300ml</p>
                     
                     <strong class="margin_item">R$ 2,39</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item guara" onclick="select_pedido('guara')">
                     <img  class="margin_item"src="img/guarana.jpeg" alt="">
                     <h4 class="margin_item">Guarana Antártica</h4>
                     <p class="margin_item">Lata de 350ml</p>
                     
                     <strong class="margin_item">R$ 2,79</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             
@@ -72,38 +78,45 @@
         <div class="pedido">
             <h2>Por fim, sua sobremesa</h2>
             <div class="itens_conteiner">
-                <div class="item">
+                <div class="item choc" onclick="select_pedido('.choc')">
                     <img  class="margin_item"src="img/bolo_choc.jpeg" alt="">
                     <h4 class="margin_item">Bolo de Chocolate</h4>
                     <p class="margin_item">Só uma fatia</p>
                     
                     <strong class="margin_item">R$ 18,00</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item cheese" onclick="select_pedido('.cheese')">
                     <img class="margin_item" src="img/cheesecake.jpeg" alt="">
                     <h4 class="margin_item">Cheesecake</h4>
                     <p class="margin_item" >Uma fatia</p>
                     
                     <strong class="margin_item">R$ 19,00</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item limao" onclick="select_pedido('.limao')">
                     <img v src="img/torta_limao.jpeg" alt="">
                     <h4 class="margin_item">Torta de Limão</h4>
                     <p class="margin_item">Uma fatia</p>
                     
                     <strong class="margin_item">R$ 19,80</strong>
+                    <ion-icon  class="check  hide"name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             </div>
             
     </div>
     <div class="bottom_bar">
-        <button > 
+        <button onclick="teste()" > 
             <span>
                 Selecione os 3 itens
                 para fechar o pedido
             </span> 
         </button>
     </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
