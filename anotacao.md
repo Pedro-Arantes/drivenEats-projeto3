@@ -44,7 +44,14 @@
 
 **Extra**
 
-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
+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
 
 
 onclick="teste()"
+
+
+https://wa.me/5521
+
+criar a um butao com a tag a .
+
+document.querySelector().href

@@ -130,7 +130,7 @@ body{
     bottom: 0%;*/
 }
 
-.bottom_bar  button{
+.bottom_bar  a{
     
 
     border: none;
@@ -138,12 +138,14 @@ body{
 
     color: white;
 
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     text-align: center;
+    
     text-decoration: none;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    
     
 
     font-size: 20px;
@@ -154,10 +156,9 @@ body{
 }
 
 .bottom_bar span {
-    text-align: center;
+    
     text-decoration: none;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    
 
     
 }
