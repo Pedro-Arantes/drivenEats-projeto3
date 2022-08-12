@@ -4,10 +4,11 @@ function teste () {
     const endereco = prompt("Escreva o seu endereço:");
 }
 
-function select_pedido(pedido){
-
-    let x = document.querySelector('.tag');
-    let y = document.querySelector(' .tag ion-icon' );
+function select_pedido(pedido , secao){
+    //console.log(secao);
+    let x = document.querySelector( secao +'  .tag');
+    //console.log(x);
+    let y = document.querySelector(secao +' .tag ion-icon' );
     
     const anota =  document.querySelector(pedido);
     const marca = document.querySelector(pedido+" ion-icon" );
@@ -23,6 +24,6 @@ function select_pedido(pedido){
     
    
     //console.log(marca);
-    //console.log(x);
+    
     
 }
