@@ -35,8 +35,8 @@ body{
 
     margin-bottom: 40px;
 
-    /*position: fixed;
-    top: 0%;*/
+    position: fixed;
+    top: 0%;
 }
 
 .top_bar  h1 {
@@ -59,6 +59,8 @@ body{
 
 .conteudo{
     background-color: #E5E5E5;
+    margin-top: 92px;
+    margin-bottom: 92px;
 }
 
 .pedido{
@@ -103,7 +105,7 @@ body{
 
     margin: 10px;
 
-    position: relative;
+    /*position: relative;*/
 }
 
 .item p{
@@ -126,8 +128,10 @@ body{
     align-items: center;
     justify-content: center;
 
-    /*position: fixed;
-    bottom: 0%;*/
+    background-color: #FFFFFF;
+
+    position: fixed;
+    bottom: 0%;
 }
 
 .bottom_bar  a{

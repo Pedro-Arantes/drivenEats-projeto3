@@ -55,3 +55,5 @@ https://wa.me/5521
 criar a um butao com a tag a .
 
 document.querySelector().href
+
+https://codesandbox.io/s/010-super-minions-forked-7ut5vj?file=/index.html

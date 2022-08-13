@@ -35,32 +35,37 @@ function teste () {
 
 function select_pedido(pedido , secao){
     //console.log(secao);
-    let x = document.querySelector( secao +'  .tag');
+    let searchPaint = document.querySelector( secao +'  .tag');
     //console.log(x);
-    let y = document.querySelector(secao +' .tag ion-icon' );
-    let z = document.querySelector(secao +" "+pedido +'  h4' );
-    let w = document.querySelector(secao +" "+pedido+' strong' );
+    let searchMark = document.querySelector(secao +' .tag ion-icon' );
+    let getPedido = document.querySelector(secao +" "+pedido +'  h4' );
+    let getPreco = document.querySelector(secao +" "+pedido+' strong' );
     //console.log(pedido);
     //console.log(secao);
     //console.log(z);
     const anota =  document.querySelector(pedido);
     const marca = document.querySelector(pedido+" ion-icon" );
-    if (x !== null) {
-        x.classList.toggle("tag");
-        y.classList.toggle("hide");
+    if (searchPaint !== null    ) {
+        searchPaint.classList.toggle("tag");
+        searchMark.classList.toggle("hide");
         count -- ;
-    } 
+    } if (anota === searchPaint) {
+        searchPaint.classList.toggle("tag");
+        searchMark.classList.toggle("hide");
+        count -- ;
+    }
         anota.classList.toggle("tag");
         marca.classList.toggle("hide");
+        
         if (secao === ".prato") {
-            prato = z.innerHTML;
-            prato_preco = w.innerHTML;
+            prato =getPedido.innerHTML;
+            prato_preco = getPreco.innerHTML;
         } else if (secao === ".sobremesa") {
-            doce= z.innerHTML;
-            doce_preco = w.innerHTML ;
+            doce= getPedido.innerHTML;
+            doce_preco = getPreco.innerHTML ;
         }  if (secao === ".bebida") {
-            bebida = z.innerHTML;
-            bebida_preco = w.innerHTML;
+            bebida = getPedido.innerHTML;
+            bebida_preco = getPreco.innerHTML;
         } 
         
         console.log(prato);
@@ -72,6 +77,10 @@ function select_pedido(pedido , secao){
             calculaTotal();
             ativaButao();
             coloreButao();
+        }else {
+            calculaTotal();
+            desativaButao();
+            descoloreButao();
         }
     
     
@@ -88,11 +97,23 @@ function ativaButao(){
     
     
 }
+function desativaButao(){
+    const butao = document.querySelector("a");
+    butao.innerHTML = ` Selecione os 3 itens
+    <br>
+    para fechar o pedido`;
+    butao.onclick = " ";
+}
 function coloreButao(){
     const butao = document.querySelector("a");
     butao.classList.remove("btn-cinza");
     butao.classList.add("btn-verde");
    
+}
+function descoloreButao (){
+    const butao = document.querySelector("a");
+    butao.classList.remove("btn-verde");
+    butao.classList.add("btn-cinza");
 }
 function calculaTotal(){
     const rpl_prato = prato_preco.replace("R$","")
