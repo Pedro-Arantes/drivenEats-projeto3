@@ -7,7 +7,7 @@ let  bebida_preco =  0;
 let  doce_preco =  0;
 let total = 0;
 
-function teste () {
+function fazerPedido () {
     let msg = `
     Olá,  gostaria de fazer o pedido:  
     - Prato: ${prato}
@@ -92,7 +92,7 @@ function select_pedido(pedido , secao){
 function ativaButao(){
     const butao = document.querySelector("a");
     butao.innerHTML = "Fechar pedido";
-    butao.outerHTML =  `<a class="btn-cinza" onclick="teste()">Fechar pedido</a>`;
+    butao.outerHTML =  `<a class="btn-cinza" onclick="fazerPedido()">Fechar pedido</a>`;
     console.log(butao.outerHTML);
     
     
